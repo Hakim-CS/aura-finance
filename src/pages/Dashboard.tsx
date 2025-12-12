@@ -4,6 +4,7 @@ import { SummaryCard } from "@/components/dashboard/SummaryCard";
 import { CategoryChart } from "@/components/dashboard/CategoryChart";
 import { SpendingTrends } from "@/components/dashboard/SpendingTrends";
 import { RecentTransactions } from "@/components/dashboard/RecentTransactions";
+import { AIRecommendations } from "@/components/dashboard/AIRecommendations";
 import { Button } from "@/components/ui/button";
 import { summaryData } from "@/data/mockData";
 
@@ -57,6 +58,9 @@ export default function Dashboard() {
         <CategoryChart />
         <SpendingTrends />
       </div>
+
+      {/* AI Recommendations */}
+      <AIRecommendations />
 
       {/* Recent Transactions */}
       <RecentTransactions />
