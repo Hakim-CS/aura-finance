@@ -20,9 +20,9 @@ export const categories = [
   { id: "entertainment", name: "Entertainment", icon: "Gamepad2", color: "hsl(var(--chart-3))" },
   { id: "shopping", name: "Shopping", icon: "ShoppingBag", color: "hsl(var(--chart-4))" },
   { id: "utilities", name: "Utilities", icon: "Zap", color: "hsl(var(--chart-5))" },
-  { id: "health", name: "Health", icon: "Heart", color: "hsl(160, 84%, 39%)" },
-  { id: "travel", name: "Travel", icon: "Plane", color: "hsl(174, 72%, 40%)" },
-  { id: "other", name: "Other", icon: "MoreHorizontal", color: "hsl(150, 15%, 50%)" },
+  { id: "health", name: "Health", icon: "Heart", color: "hsl(var(--chart-6))" },
+  { id: "travel", name: "Travel", icon: "Plane", color: "hsl(var(--chart-7))" },
+  { id: "other", name: "Other", icon: "MoreHorizontal", color: "hsl(var(--chart-8))" },
 ];
 
 export const mockExpenses: Expense[] = [
