@@ -8,6 +8,7 @@ import { CategoryBudgetCard } from "@/components/budget/CategoryBudgetCard";
 import { BudgetChart } from "@/components/budget/BudgetChart";
 import { SpendingTrendChart } from "@/components/budget/SpendingTrendChart";
 import { EditBudgetDialog } from "@/components/budget/EditBudgetDialog";
+import { AIBudgetPredictions } from "@/components/ai/AIBudgetPredictions";
 import { mockMonthlyBudget, BudgetCategory } from "@/data/budgetData";
 
 const months = [
@@ -128,6 +129,9 @@ export default function Budget() {
           </div>
         </CardContent>
       </Card>
+
+      {/* AI Budget Predictions */}
+      <AIBudgetPredictions />
 
       {/* Charts */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
