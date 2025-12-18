@@ -1,73 +1,60 @@
-# Welcome to your Lovable project
+# Aura Finance - AI-Powered Finance Management
 
-## Project info
+A thesis project demonstrating an intelligent personal finance management system with AI-powered recommendations.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Project Overview
 
-## How can I edit this code?
+This application provides users with comprehensive financial tracking and management capabilities, enhanced by artificial intelligence to deliver personalized financial insights and recommendations.
 
-There are several ways of editing your application.
+## Key Features
 
-**Use Lovable**
+- **Expense Tracking**: Manual entry, receipt upload, and voice input for expenses
+- **AI Recommendations**: Intelligent suggestions for budget optimization and spending patterns
+- **Group Management**: Shared expense tracking for groups
+- **Budget Planning**: Set and monitor budgets with visual analytics
+- **Dashboard Analytics**: Real-time insights with charts and spending trends
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Development Setup
 
-Changes made via Lovable will be committed automatically to this repo.
+**Prerequisites**: Node.js & npm - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+**Getting Started**
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone https://github.com/Berk-Can02/aura-finance.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project directory
+cd aura-finance
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
+## Technologies Used
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Vite** - Fast build tool and dev server
+- **TypeScript** - Type-safe JavaScript
+- **React** - UI framework
+- **shadcn-ui** - Component library
+- **Tailwind CSS** - Utility-first styling
+- **Recharts** - Data visualization
+- **React Router** - Navigation
+- **Tanstack Query** - Data fetching and caching
 
-## How can I deploy this project?
+## Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Deploy using any hosting service that supports Vite applications:
+- Vercel
+- Netlify
+- AWS Amplify
+- Your own server
 
-## Can I connect a custom domain to my Lovable project?
+## Thesis Information
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is developed as part of a thesis demonstrating the integration of AI-powered recommendations in personal finance management applications.

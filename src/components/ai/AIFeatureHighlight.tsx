@@ -1,33 +1,33 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Brain, Sparkles, TrendingUp, Shield, Zap, Target } from "lucide-react";
+import { Brain, Sparkles, TrendingUp, AlertTriangle, PiggyBank, Tags } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const features = [
   {
-    icon: Brain,
-    title: "Smart Analysis",
-    description: "AI analyzes spending patterns in real-time",
+    icon: Tags,
+    title: "Auto-Categorization",
+    description: "Automatically classifies expenses by category",
     color: "text-primary",
     bgColor: "bg-primary/10",
   },
   {
     icon: TrendingUp,
-    title: "Predictive Insights",
-    description: "Forecast future expenses accurately",
+    title: "Spending Trends",
+    description: "Analyzes patterns using moving averages",
     color: "text-secondary",
     bgColor: "bg-secondary/10",
   },
   {
-    icon: Shield,
-    title: "Anomaly Detection",
-    description: "Instant alerts for unusual activity",
-    color: "text-accent",
-    bgColor: "bg-accent/10",
+    icon: AlertTriangle,
+    title: "Budget Warnings",
+    description: "Rule-based alerts when approaching limits",
+    color: "text-orange-500",
+    bgColor: "bg-orange-500/10",
   },
   {
-    icon: Target,
-    title: "Goal Tracking",
-    description: "AI-optimized path to your goals",
+    icon: PiggyBank,
+    title: "Saving Suggestions",
+    description: "Simple, actionable saving recommendations",
     color: "text-success",
     bgColor: "bg-success/10",
   },
@@ -82,8 +82,8 @@ export function AIFeatureHighlight() {
         <div className="mt-6 pt-4 border-t border-border/50 flex items-center justify-between flex-wrap gap-4">
           <div className="flex items-center gap-6">
             <div className="text-center">
-              <p className="text-2xl font-bold text-foreground">98%</p>
-              <p className="text-xs text-muted-foreground">Accuracy</p>
+              <p className="text-2xl font-bold text-foreground">90%</p>
+              <p className="text-xs text-muted-foreground">+ Accuracy</p>
             </div>
             <div className="text-center">
               <p className="text-2xl font-bold text-foreground">2.5s</p>
@@ -95,7 +95,7 @@ export function AIFeatureHighlight() {
             </div>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-success/10 border border-success/30">
-            <Zap className="w-4 h-4 text-success" />
+            <p className="w-4 h-4 text-success" />
             <span className="text-sm font-medium text-success">AI Active</span>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Sparkles, TrendingUp, Coffee, Receipt, AlertCircle, Brain, Zap, Target } from "lucide-react";
+import { Sparkles, TrendingUp, Coffee, AlertCircle, PiggyBank, Tags, AlertTriangle, Brain, Zap } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AIBadge } from "@/components/ai/AIBadge";
 import { cn } from "@/lib/utils";
@@ -6,44 +6,44 @@ import { cn } from "@/lib/utils";
 const recommendations = [
   {
     id: 1,
-    icon: TrendingUp,
-    title: "Spending Alert",
-    text: "You spent 32% more on Food this week compared to your average. AI detected unusual pattern.",
+    icon: AlertTriangle,
+    title: "Budget Warning",
+    text: "You've spent 85% of your monthly Food budget. Consider reducing spending in this category.",
     type: "warning",
-    confidence: 94,
-    action: "Review transactions",
+    confidence: 95,
+    action: "View budget",
   },
   {
     id: 2,
-    icon: Coffee,
-    title: "Savings Opportunity",
-    text: "You can save $450 by limiting Café expenses to 3 times a week based on your habits.",
-    type: "tip",
-    confidence: 87,
-    action: "Set reminder",
+    icon: TrendingUp,
+    title: "Spending Trend",
+    text: "Your average monthly spending increased by 15% over the last 3 months based on moving average.",
+    type: "reminder",
+    confidence: 92,
+    action: "See details",
   },
   {
     id: 3,
-    icon: Receipt,
-    title: "Bill Reminder",
-    text: "Your utilities bill is due in 3 days. AI auto-categorized based on past payments.",
-    type: "reminder",
-    confidence: 99,
-    action: "Pay now",
+    icon: Coffee,
+    title: "Saving Suggestion",
+    text: "Reducing coffee shop visits from 5 to 3 times per week could save you $80/month.",
+    type: "tip",
+    confidence: 88,
+    action: "Set goal",
   },
   {
     id: 4,
-    icon: Target,
-    title: "Goal Progress",
-    text: "Great job! Your savings rate increased by 5% this month. You're 2 weeks ahead of target.",
+    icon: Tags,
+    title: "Auto-Categorized",
+    text: "Successfully categorized 12 new transactions. Review if any need adjustment.",
     type: "success",
-    confidence: 91,
-    action: "View goals",
+    confidence: 94,
+    action: "Review",
   },
 ];
 
 const typeStyles = {
-  warning: { bg: "bg-warning/10", border: "border-warning/30", text: "text-warning", iconBg: "bg-warning/20" },
+  warning: { bg: "bg-orange-500/10", border: "border-orange-500/30", text: "text-orange-500", iconBg: "bg-orange-500/20" },
   tip: { bg: "bg-primary/10", border: "border-primary/30", text: "text-primary", iconBg: "bg-primary/20" },
   reminder: { bg: "bg-secondary/10", border: "border-secondary/30", text: "text-secondary", iconBg: "bg-secondary/20" },
   success: { bg: "bg-success/10", border: "border-success/30", text: "text-success", iconBg: "bg-success/20" },
@@ -68,7 +68,7 @@ export function AIRecommendations() {
                 <AIBadge variant="inline" animated={false} />
               </div>
               <p className="text-xs text-muted-foreground font-normal mt-0.5">
-                Personalized analysis powered by machine learning
+                Rule-based analysis with interpretable insights
               </p>
             </div>
           </CardTitle>
