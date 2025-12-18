@@ -5,6 +5,9 @@ import { CategoryChart } from "@/components/dashboard/CategoryChart";
 import { SpendingTrends } from "@/components/dashboard/SpendingTrends";
 import { RecentTransactions } from "@/components/dashboard/RecentTransactions";
 import { AIRecommendations } from "@/components/dashboard/AIRecommendations";
+import { AIFeatureHighlight } from "@/components/ai/AIFeatureHighlight";
+import { AIPredictiveChart } from "@/components/ai/AIPredictiveChart";
+import { AISmartAlerts } from "@/components/ai/AISmartAlerts";
 import { Button } from "@/components/ui/button";
 import { summaryData } from "@/data/mockData";
 
@@ -53,14 +56,25 @@ export default function Dashboard() {
         />
       </div>
 
+      {/* AI Feature Highlight */}
+      <AIFeatureHighlight />
+
       {/* Charts Row */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <CategoryChart />
         <SpendingTrends />
       </div>
 
-      {/* AI Recommendations */}
-      <AIRecommendations />
+      {/* AI Predictive Analysis */}
+      <AIPredictiveChart />
+
+      {/* AI Recommendations & Smart Alerts */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="lg:col-span-2">
+          <AIRecommendations />
+        </div>
+        <AISmartAlerts />
+      </div>
 
       {/* Recent Transactions */}
       <RecentTransactions />
